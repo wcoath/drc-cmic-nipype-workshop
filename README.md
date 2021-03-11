@@ -29,19 +29,20 @@ To keep your changes, either manually download the changed notebooks (i.e. File 
 
 Full explanation of command
 
-'docker run' **start up a container already built or pulled**
+docker run = **start up a container already built or pulled**
 
-'-p 8888:8888' **port used local port:container port**
+-p 8888:8888 = **port used local port:container port**
 
-'-it' **run Docker interactively**
+-it = **run Docker interactively**
 
-'--rm' **remove the container when it exits**
+--rm = **remove the container when it exits**
 
-'-v /path/to/my_output:/home/neuro/my_output' **use local files local path:container path**
+-v /path/to/my_output:/home/neuro/my_output = **use local files local path:container path**
 
-'wcoath/nipype_workshop' **use specified user/project:version container**
+wcoath/nipype_workshop = **use specified user/project:version container**
 
-3. Then paste the link given into a web browser to access via Jupyter Notebook.
+3. Then paste the bottom link that is outputted into a web browser to access via Jupyter Notebook, it should look start with this:
+http://127.0.0.1:8888/?token=
 
 4. Click on the example pipeline script inside: suvr_analysis_workshop.ipynb
 
