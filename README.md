@@ -31,7 +31,7 @@ Full explanation of command
 
 docker run = **start up a container already built or pulled**
 
--p 8888:8888 = **port used local port:container port**
+-p 8888:8888 = **port used {local port}:{container port}**
 
 -it = **run Docker interactively**
 
