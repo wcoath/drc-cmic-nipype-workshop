@@ -37,9 +37,9 @@ docker run = **start up a container already built or pulled**
 
 --rm = **remove the container when it exits**
 
--v /path/to/my_output:/home/neuro/my_output = **use local files local path:container path**
+-v /path/to/my_output:/home/neuro/my_output = **use local files {local path}:{container path}**
 
-wcoath/nipype_workshop = **use specified user/project:version container**
+wcoath/nipype_workshop = **use specified {user}/{project:version} container**
 
 3. Then copy and paste the bottom link from the terminal output into a web browser to access via Jupyter Notebook, the link should look start with this:
 
