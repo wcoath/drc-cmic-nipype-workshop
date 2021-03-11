@@ -28,11 +28,17 @@ To keep your changes, either manually download the changed notebooks (i.e. File 
 `docker run -p 8888:8888 -it --rm -v /path/to/my_output:/home/neuro/my_output wcoath/nipype_workshop`
 
 Full explanation of command
+
 'docker run' **start up a container already built or pulled**
+
 '-p 8888:8888' **port used local port:container port**
+
 '-it' **run Docker interactively**
+
 '--rm' **remove the container when it exits**
+
 '-v /path/to/my_output:/home/neuro/my_output' **use local files local path:container path**
+
 'wcoath/nipype_workshop' **use specified user/project:version container**
 
 3. Then paste the link given into a web browser to access via Jupyter Notebook.
