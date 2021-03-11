@@ -42,7 +42,8 @@ docker run = **start up a container already built or pulled**
 wcoath/nipype_workshop = **use specified user/project:version container**
 
 3. Then paste the bottom link that is outputted into a web browser to access via Jupyter Notebook, it should look start with this:
-http://127.0.0.1:8888/?token=
 
-4. Click on the example pipeline script inside: suvr_analysis_workshop.ipynb
+http://127.0.0.1:8888/?token= (don't use this link it needs a token at the end)
+
+4. When the notebook has loaded you should have folders for 'data', 'output' and 'my_output' (this is where you can store files you want to keep locally in your 'my_output' folder. Click on the example pipeline script 'suvr_analysis_workshop.ipynb', you can run it and see how it works. It is currently read only, so if you want to edit you can save a copy inside /home/neuro/my_output to keep any changes you make.
 
