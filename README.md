@@ -27,7 +27,7 @@ To keep your changes, either manually download the changed notebooks (i.e. File 
 
 `docker run -p 8888:8888 -it --rm -v /path/to/my_output:/home/neuro/my_output wcoath/nipype_workshop`
 
-Open http://127.0.0.1:8888/?token=pybrain or http://localhost:8888/?token=pybrain in your web browser to access the workshop content.
+And paste the link given into a web browser to access via Jupyter Notebook.
 
 Click on the example pipeline script: 
 
