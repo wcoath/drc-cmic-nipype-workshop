@@ -17,17 +17,19 @@ It is just over 4GB in size:
 
 ## Using Jupyter Notebooks to access the workshop
 
-Everything you do within this docker container will be deleted the moment you terminate the docker run ... command or you close the terminal running it. 
+Everything you do within this docker container will be deleted the moment you terminate the docker 'run ...' command or you close the terminal running it. 
 
-To keep your changes, either manually download the changed notebooks (i.e. File > Download As > Notebook (.ipynb)) or (2) create a common folder within the container and on your system and allow a direct transition of data. To open the container with Jupyrer notebooks with a folder to save your output:
+To keep your changes, either manually download the changed notebooks (i.e. File > Download As > Notebook (.ipynb)) or create a common folder within the container and on your system and allow a direct transition of data. 
+
+To open the container with Jupyrer notebooks with a folder to save your output:
 
 1. Create a folder somewhere on your system called 'my_output'
 
-2. Run this command:
+2. Run this command, filling in the path to the folder you just created:
 
 `docker run -p 8888:8888 -it --rm -v /path/to/my_output:/home/neuro/my_output wcoath/nipype_workshop`
 
-Full explanation of command
+Full explanation of command:
 
 docker run = **start up a container already built or pulled**
 
@@ -45,5 +47,5 @@ wcoath/nipype_workshop = **use specified {user}/{project:version} container**
 
 http://127.0.0.1:8888/?token= (don't use this link it needs the token at the end)
 
-4. When the notebook has loaded you should have folders for 'data', 'output' and 'my_output' (this is where you can store files you want to keep locally in your 'my_output' folder. Click on the example pipeline script 'suvr_analysis_workshop.ipynb', you can run it and see how it works. It is currently read only, so if you want to edit you can save a copy inside /home/neuro/my_output to keep any changes you make.
+4. When the notebook has loaded you should have folders for 'data', 'output' and 'my_output' (this is where you can store files you want to keep locally in your 'my_output' folder. Click on the example pipeline script 'suvr_analysis_workflow.ipynb', you can run it and see how it works. It is currently read only, so if you want to edit you can save a copy inside my_output to keep any changes you make.
 
