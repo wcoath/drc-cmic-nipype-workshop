@@ -49,3 +49,13 @@ http://127.0.0.1:8888/?token= (don't use this link it needs the token at the end
 
 4. When the notebook has loaded you should have folders for 'data', 'output' and 'my_output' (this is where you can store files you want to keep locally in your 'my_output' folder. Click on the example pipeline script 'suvr_analysis_workflow.ipynb', you can run it and see how it works. It is currently read only, so if you want to edit you can save a copy inside my_output to keep any changes you make.
 
+## Dockerfile & Analysis Script
+
+The Dockerfile I used to build the Docker image for the workshop is included in this repo, if you wish to customise the image you can put this Dockerfile inisde a directory, make your edits and then build from inside the same directory as the Dockerfile using this command:
+
+`docker build -t {your_username}/{image_name} .`
+
+If you want to include any directories/files in your Docker image they need to be in the same directory as the Dockerfile, and in the Dockerfile you can specify lines to ADD or COPY them in.
+
+
+
